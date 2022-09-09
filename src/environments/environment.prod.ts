@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  photosUrl: 'https://jsonplaceholder.typicode.com/photos',
+  pageLimit: 20,
 };

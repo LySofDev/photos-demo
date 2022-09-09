@@ -1,0 +1,45 @@
+<div class="content">
+  <h1>{{ (photo$ | async)?.title }}</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit
+    eleifend lobortis. Sed lacus lorem, pharetra vel metus vel, hendrerit
+    lobortis nulla. Vivamus id leo odio. Curabitur ut interdum nisl, vitae
+    efficitur lorem. Sed eleifend auctor aliquet. Nunc sed malesuada sapien.
+    Cras at egestas leo. Aliquam erat volutpat. Curabitur tincidunt et ipsum ac
+    commodo. Suspendisse vitae massa ex. In eget tempus mauris, id posuere urna.
+    Aliquam consectetur purus sed tellus tincidunt volutpat. Nunc pulvinar
+    cursus elit, et tristique justo scelerisque quis.
+  </p>
+  <p>
+    Phasellus eu pharetra libero. Aenean id laoreet nisl. Suspendisse auctor at
+    nisl in malesuada. Etiam ultricies, justo vel luctus feugiat, lectus mi
+    ullamcorper leo, ac ultricies magna mi feugiat nisi. Mauris eleifend nunc ut
+    lobortis gravida. Sed est leo, feugiat porttitor magna nec, aliquam
+    vulputate eros. Nulla tellus leo, mollis in posuere eu, feugiat vel quam.
+    Nullam sit amet velit eu lectus condimentum aliquam. In at nulla massa. In
+    accumsan tempus posuere. Curabitur ac lobortis erat, sit amet tristique
+    eros. Aliquam sodales pellentesque dolor ac bibendum. Aliquam a dolor at
+    arcu fringilla bibendum sit amet vel nulla.
+  </p>
+  <p>
+    Nullam molestie risus arcu. Duis condimentum metus quis mi semper mollis.
+    Quisque ultricies ullamcorper sem id posuere. Sed a ante vel diam dictum
+    posuere in a lacus. Duis egestas turpis nec orci auctor, in malesuada odio
+    rutrum. Mauris commodo nisi sed est blandit lobortis. Maecenas vel consequat
+    dolor. Quisque ullamcorper semper porttitor. Fusce vel lectus eu ligula
+    accumsan aliquet fermentum et nunc. Duis dolor elit, commodo ut feugiat non,
+    ultricies sit amet elit. Ut ligula ex, gravida non viverra ut, vestibulum a
+    ante. Vivamus fringilla viverra arcu in faucibus. Nulla sit amet
+    sollicitudin turpis, sit amet semper ante.
+  </p>
+</div>
+<img [src]="(photo$ | async)?.url" />
+<div class="controls">
+  <a
+    mat-icon-button
+    [routerLink]="['']"
+    aria-label="Deselect the current photo"
+  >
+    <mat-icon>close</mat-icon>
+  </a>
+</div>

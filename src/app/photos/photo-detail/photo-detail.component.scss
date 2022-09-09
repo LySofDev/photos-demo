@@ -1,0 +1,20 @@
+.content {
+  width: 45%;
+  padding: 1rem;
+  margin: 5rem 2rem;
+}
+img {
+  margin-left: 10rem;
+  height: 600px;
+  width: 600px;
+}
+.controls {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+:host {
+  display: flex;
+  padding: 1rem;
+}

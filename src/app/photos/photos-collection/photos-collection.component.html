@@ -1,0 +1,13 @@
+<router-outlet></router-outlet>
+
+<div [class.hidden]="isLoading$ | async" class="photos">
+  <app-photo-preview
+    *ngFor="let photo of photos$ | async"
+    [photo]="photo"
+    [isSelected]="(selectedPhotoId$ | async) === photo.id"
+  ></app-photo-preview>
+</div>
+
+<div *ngIf="isLoading$ | async" class="loading">
+  <mat-spinner></mat-spinner>
+</div>

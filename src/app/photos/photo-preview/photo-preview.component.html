@@ -1,0 +1,8 @@
+<a [routerLink]="[photo?.id]">
+  <mat-card [class.selected]="isSelected">
+    <mat-card-title-group>
+      <img mat-sm-card-image [src]="photo?.thumbnailUrl" />
+      <mat-card-subtitle>{{ photo?.title }}</mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card></a
+>
